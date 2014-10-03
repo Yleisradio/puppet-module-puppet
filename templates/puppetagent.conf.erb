@@ -38,6 +38,8 @@
     certname = <%= @certname %>
     server = <%= @puppet_server %>
 <% if @puppet_ca_server != 'UNSET' %>    ca_server = <%= @puppet_ca_server %><% end %>
+<% if @http_proxy_host != 'UNSET' %>    http_proxy_host = <%= @http_proxy_host %><% end %>
+<% if @http_proxy_port != 'UNSET' %>    http_proxy_port = <%= @http_proxy_port %><% end %>
     report = true
     graph = true
     pluginsync = true
