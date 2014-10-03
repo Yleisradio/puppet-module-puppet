@@ -14,6 +14,8 @@ class puppet::agent (
   $env                          = $::env,
   $puppet_server                = 'puppet',
   $puppet_ca_server             = 'UNSET',
+  $http_proxy_host              = 'UNSET',
+  $http_proxy_port              = 'UNSET',
   $is_puppet_master             = false,
   $run_method                   = 'service',
   $run_interval                 = '30',
